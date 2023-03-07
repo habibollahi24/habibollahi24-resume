@@ -54,8 +54,6 @@ const Contact = () => {
       setSelectedCart(id);
    };
 
-   const chom = "border-red-400 bg-white z-50 absolute";
-
    return (
       <Layout>
          <div className="flex justify-center flex-nowrap  items-center  overflow-hidden h-[25rem] relative ">
@@ -65,17 +63,17 @@ const Contact = () => {
                      key={c.id}
                      className={` ${
                         c.id === 1
-                           ? "g-yellow-300 rotate-[10deg]"
+                           ? " rotate-[10deg]"
                            : c.id === 2
-                           ? "g-red-300 -rotate-[10deg]"
+                           ? " -rotate-[10deg]"
                            : c.id === 3
-                           ? "g-blue-300 rotate-[10deg]"
+                           ? " rotate-[10deg]"
                            : c.id === 4
-                           ? "g-lime-400 -rotate-[10deg]"
+                           ? " -rotate-[10deg]"
                            : c.id === 5
-                           ? "g-indigo-500 rotate-[10deg]"
+                           ? " rotate-[10deg]"
                            : ""
-                     } border-2 absolute transition-all cursor-pointer rounded-md duration-300 bg-white dark:bg-dark-900 w-[260px] h-[300px] p-4  flex-shrink-0 ${
+                     } border-2 absolute transition-all cursor-pointer rounded-md duration-300 bg-white dark:bg-dark-900 w-[240px] h-[280px] p-4  flex-shrink-0 ${
                         selectedCart === c.id
                            ? "border-gray-400 !bg-white dark:!bg-dark-900 !z-10 absolute !rotate-0 scale-95"
                            : ""
@@ -91,13 +89,12 @@ const Contact = () => {
                         >
                            {c.body}
                         </a>
-                        {/* <p ></p> */}
                      </div>
                   </div>
                );
             })}
          </div>
-         <div className="flex justify-center space-x-5 text-gray-800 dark:text-gray-200">
+         <div className="flex justify-center space-x-5 text-gray-800 dark:text-gray-200 mb-8">
             <button className="-rotate-90 text-3xl" onClick={prevHandler}>
                <BsFillCapslockFill />
             </button>
