@@ -16,7 +16,7 @@ const Layout = ({ children }) => {
             <nav
                className={`${
                   showNavbar ? "w-full z-20" : "hidden"
-               } md:block w-64 pt-32 dark:bg-dark-900 bg-zinc-200  z-30 h-screen fixed top-0 left-0`}
+               } md:block w-64 pt-28 md:pt-32 dark:bg-dark-900 bg-zinc-200  z-30 h-screen fixed top-0 left-0`}
             >
                <Navbar />
             </nav>
