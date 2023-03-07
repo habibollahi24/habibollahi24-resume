@@ -30,7 +30,7 @@ const SingleWorkPage = ({ pageData }) => {
                      className="w-full h-auto  rounded-xl overflow-hidden shadow-lg"
                   />
                </div>
-               <div className="flex md:flex-grow  flex-col items-center w-80 text-center">
+               <div className="flex md:flex-grow  flex-col items-center w-full text-center">
                   {train.technology.map((tag, index) => {
                      return (
                         <span
