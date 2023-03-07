@@ -10,7 +10,7 @@ const SingleWorkPage = ({ pageData }) => {
       <>
          <BreadCramp />
          <div className="flex flex-col ">
-            <div className="flex items-center justify-between my-5">
+            <div className="flex items-center justify-between my-5 px-2">
                <TitleSection>{train.title}</TitleSection>
                {train.isCompleted ? (
                   <p className="text-sm flex items-center text-gray-700 dark:text-gray-200">
