@@ -30,7 +30,7 @@ const Navbar = () => {
                   return (
                      <li
                         key={nav.id}
-                        className={`text-base dark:text-gray-300 text-gray-700 -ml-[2px] px-12 font-medium tracking-tight   ${
+                        className={`text-base dark:text-gray-300 text-gray-700 -ml-[2px] px-6 md:px-8 font-medium tracking-tight   ${
                            isActive ? " text-gray-800 dark:text-white" : ""
                         }`}
                      >
@@ -39,7 +39,7 @@ const Navbar = () => {
                               className={
                                  isActive
                                     ? "text-2xl "
-                                    : "transition-all inline-block hover:translate-x-2 "
+                                    : "transition-all inline-block md:hover:translate-x-2 "
                               }
                            >
                               {nav.title}

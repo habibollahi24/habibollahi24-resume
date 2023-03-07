@@ -7,10 +7,10 @@ import { BsCheckAll } from "react-icons/bs";
 const SingleWorkPage = ({ pageData }) => {
    const train = pageData;
    return (
-      <>
+      <div className="p-2">
          <BreadCramp />
          <div className="flex flex-col ">
-            <div className="flex items-center justify-between my-5 px-2">
+            <div className="flex items-center justify-between my-5 ">
                <TitleSection>{train.title}</TitleSection>
                {train.isCompleted ? (
                   <p className="text-sm flex items-center text-gray-700 dark:text-gray-200">
@@ -22,20 +22,20 @@ const SingleWorkPage = ({ pageData }) => {
                   </p>
                )}
             </div>
-            <div className="flex flex-col md:flex-row items-center md:justify-between">
-               <div className="w-full  md:h-72 p-6">
+            <div className="flex flex-col md:flex-row items-center md:justify-between gap-5">
+               <div className="w-full  md:h-72 md: ">
                   <img
                      src={train.screenshot}
                      alt={train.title}
                      className="w-full h-auto  rounded-xl overflow-hidden shadow-lg"
                   />
                </div>
-               <div className="flex md:flex-grow p-4 flex-col items-center w-80 text-center">
+               <div className="flex md:flex-grow  flex-col items-center w-80 text-center">
                   {train.technology.map((tag, index) => {
                      return (
                         <span
                            key={index}
-                           className="text-xs my-1 bg-gray-200 w-full py-2 px-2 rounded-md text-gray-700"
+                           className="text-xs my-1 bg-gray-200 w-full py-2  rounded-md text-gray-700"
                         >
                            {tag}
                         </span>
@@ -43,7 +43,7 @@ const SingleWorkPage = ({ pageData }) => {
                   })}
                </div>
             </div>
-            <div className=" mt-6 p-6">
+            <div className=" mt-6 py-6">
                <div className="flex space-x-2 text-center">
                   {train.demo && (
                      <a
@@ -63,12 +63,12 @@ const SingleWorkPage = ({ pageData }) => {
                   </a>
                </div>
 
-               <div className="border-2 rounded-md text-gray-700 px-6 py-4 my-6 dark:text-gray-300">
+               <div className="border-2 rounded-md text-gray-700 pl-2 py-4 my-6 dark:text-gray-300">
                   Description : {train.descriptions}
                </div>
             </div>
          </div>
-      </>
+      </div>
    );
 };
 

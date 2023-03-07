@@ -11,7 +11,7 @@ const TrainPage = () => {
 
    return (
       <Layout>
-         <div className="flex justify-between items-center mb-6">
+         <div className="flex justify-between items-end md:items-center mb-6 px-4">
             <TitleSection classes="">All Trains</TitleSection>
             <SelectOption search={search} onSelectHandler={onSelectHandler} />
          </div>

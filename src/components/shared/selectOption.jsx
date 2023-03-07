@@ -3,7 +3,9 @@ import React from "react";
 const SelectOption = ({ search, onSelectHandler }) => {
    return (
       <div className="flex flex-col items-center md:flex-row space-y-1 md:space-y-0">
-         <span className="text-sm text-gray-700 dark:text-gray-200">Search by Technology:</span>
+         <span className="text-xs text-gray-700 dark:text-gray-200 tracking-tighter">
+            Search by Technology:
+         </span>
          <select
             value={search}
             onChange={(e) => onSelectHandler(e.target.value)}
