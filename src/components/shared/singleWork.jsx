@@ -23,11 +23,11 @@ const SingleWorkPage = ({ pageData }) => {
                )}
             </div>
             <div className="flex flex-col md:flex-row items-center md:justify-between gap-5">
-               <div className="w-full  md:h-72 md: ">
+               <div className="  md:h-72  ">
                   <img
                      src={train.screenshot}
                      alt={train.title}
-                     className="w-full h-auto  rounded-xl overflow-hidden shadow-lg"
+                     className="w-3/4 h-auto  rounded-xl overflow-hidden shadow-lg"
                   />
                </div>
                <div className="flex md:flex-grow  flex-col items-center w-80 text-center">
