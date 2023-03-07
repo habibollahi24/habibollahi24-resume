@@ -27,7 +27,7 @@ const SingleWorkPage = ({ pageData }) => {
                   <img
                      src={train.screenshot}
                      alt={train.title}
-                     className="w-3/4 h-auto  rounded-xl overflow-hidden shadow-lg"
+                     className="w-full h-auto  rounded-xl overflow-hidden shadow-lg"
                   />
                </div>
                <div className="flex md:flex-grow  flex-col items-center w-80 text-center">
@@ -44,7 +44,7 @@ const SingleWorkPage = ({ pageData }) => {
                </div>
             </div>
             <div className=" mt-6 py-6">
-               <div className="flex space-x-2 text-center">
+               <div className="flex gap-2 text-center">
                   {train.demo && (
                      <a
                         href={train.demo}
@@ -63,7 +63,7 @@ const SingleWorkPage = ({ pageData }) => {
                   </a>
                </div>
 
-               <div className="border-2 rounded-md text-gray-700 pl-2 py-4 my-6 dark:text-gray-300">
+               <div className="border-2 rounded-md text-gray-700 px-2 py-4 my-6 dark:text-gray-300">
                   Description : {train.descriptions}
                </div>
             </div>
