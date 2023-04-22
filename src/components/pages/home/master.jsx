@@ -17,8 +17,8 @@ const Master = () => {
    return (
       <div className="bbgg ">
          <div className="my-container">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 h-screen py-2 md:p-20 ">
-               <div className="  text-center md:text-left flex flex-col justify-center space-y-5 items-center card p-2">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-2 h-screen py-2 md:p-20 ">
+               <div className="  text-center md:text-left flex flex-col justify-center space-y-1 items-center card ">
                   <div className="w-36 h-36 md:w-40 md:h-40    ">
                      <img
                         src={user.image}
