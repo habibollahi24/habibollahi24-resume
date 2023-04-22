@@ -18,8 +18,8 @@ const Master = () => {
       <div className="bbgg ">
          <div className="my-container">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-2 h-screen py-2 md:p-20 ">
-               <div className="  text-center md:text-left flex flex-col justify-center space-y-1 items-center card ">
-                  <div className="w-36 h-36 md:w-40 md:h-40    ">
+               <div className="  grid card ">
+                  <div className="w-36 h-36 md:w-40 md:h-40  text-center mx-auto self-center  ">
                      <img
                         src={user.image}
                         alt={user.name}
@@ -42,7 +42,7 @@ const Master = () => {
                <div className="grid grid-cols-2 gap-2">
                   <Link
                      to="/train"
-                     className="card flex justify-center items-center text-gray-200 text-xl"
+                     className="card flex justify-center items-center text-gray-200 text-xl hover:scale-95 transition-all"
                   >
                      <div className="flex items-end">
                         <span>Train</span>
@@ -51,7 +51,7 @@ const Master = () => {
                   </Link>
                   <Link
                      to="/projects"
-                     className="card flex justify-center items-center text-gray-200 text-xl"
+                     className="card flex justify-center items-center text-gray-200 text-xl hover:scale-95 transition-all"
                   >
                      <div className="flex  items-end">
                         <span>Project</span>
@@ -60,7 +60,7 @@ const Master = () => {
                   </Link>
                   <Link
                      to="/skils"
-                     className="card flex justify-center items-center text-gray-200 text-xl"
+                     className="card flex justify-center items-center text-gray-200 text-xl hover:scale-95 transition-all"
                   >
                      <div className="flex  items-end">
                         <span>Skils</span>
@@ -69,7 +69,7 @@ const Master = () => {
                   </Link>
                   <Link
                      to="/about-me"
-                     className="card flex justify-center items-center text-gray-200 text-xl"
+                     className="card flex justify-center items-center text-gray-200 text-xl hover:scale-95 transition-all"
                   >
                      <div className="flex  items-end">
                         <span>About Me</span>
