@@ -5,9 +5,9 @@ import Master from "../components/pages/home/master";
 
 const HomePage = () => {
    return (
-      <Layout>
-         <Master />
-      </Layout>
+      // <Layout>
+      <Master />
+      // </Layout>
    );
 };
 

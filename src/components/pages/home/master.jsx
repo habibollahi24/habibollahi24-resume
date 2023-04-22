@@ -1,6 +1,8 @@
 import React from "react";
-// import userImage from "../../../assets/images/ee97bc7f-c32b-4b3a-a7bd-b30142800267.jfif";
 import userImage from "../../../assets/images/habibollahi24.jpg";
+import { Link } from "react-router-dom";
+import { HiOutlineLightBulb, HiOutlineFingerPrint } from "react-icons/hi";
+import { HiOutlinePuzzlePiece, HiOutlineDocumentCheck } from "react-icons/hi2";
 
 const user = {
    id: "habibollahi",
@@ -10,25 +12,72 @@ const user = {
    job: "Front-End Developer | React",
    level: "Junior",
 };
-// flex flex-col md:flex-row md:items-end md:space-x-10
+
 const Master = () => {
    return (
-      <div className="  py-6 md:py-0 dark:bg-dark-900 md:dark:bg-transparent rounded-lg">
-         <div className="h-48 md:w-full  md:h-60 grayscale-[50%] bg-master relative">
-            <div className="w-36 h-36 md:w-52 md:h-52 rounded-2xl overflow-hidden right-1/2 md:right-16 translate-x-1/2 md:translate-x-0 md:translate-y-1/2 top-0 md:bottom-0  absolute">
-               <img src={user.image} alt={user.name} className=" h-full w-full object-cover " />
+      <div className="bbgg ">
+         <div className="my-container">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 h-screen py-2 md:p-20 ">
+               <div className="  text-center md:text-left flex flex-col justify-center space-y-5 items-center card p-2">
+                  <div className="w-36 h-36 md:w-40 md:h-40    ">
+                     <img
+                        src={user.image}
+                        alt={user.name}
+                        className=" h-full w-full object-cover rounded-2xl border border-gray-400"
+                     />
+                  </div>
+                  <div className="text-center">
+                     <p className="text-4xl md:text-5xl font-extralight text-gray-800 dark:text-gray-200 tracking-tighter">
+                        {user.name}
+                     </p>
+                     <p className="text-4xl md:text-5xl font-extralight text-gray-800 dark:text-gray-200 tracking-tighter">
+                        {user.family}
+                     </p>
+                     <p className="text-base font-light text-gray-100 mt-5">{user.job}</p>
+                     <p className="text-base font-light text-gray-100 -mt-1">
+                        {user.level}
+                     </p>
+                  </div>
+               </div>
+               <div className="grid grid-cols-2 gap-2">
+                  <Link
+                     to="/train"
+                     className="card flex justify-center items-center text-gray-200 text-xl"
+                  >
+                     <div className="flex items-end">
+                        <span>Train</span>
+                        <HiOutlineLightBulb className="text-5xl" />
+                     </div>
+                  </Link>
+                  <Link
+                     to="/projects"
+                     className="card flex justify-center items-center text-gray-200 text-xl"
+                  >
+                     <div className="flex  items-end">
+                        <span>Project</span>
+                        <HiOutlineDocumentCheck className="text-5xl" />
+                     </div>
+                  </Link>
+                  <Link
+                     to="/skils"
+                     className="card flex justify-center items-center text-gray-200 text-xl"
+                  >
+                     <div className="flex  items-end">
+                        <span>Skils</span>
+                        <HiOutlinePuzzlePiece className="text-5xl" />
+                     </div>
+                  </Link>
+                  <Link
+                     to="/about-me"
+                     className="card flex justify-center items-center text-gray-200 text-xl"
+                  >
+                     <div className="flex  items-end">
+                        <span>About Me</span>
+                        <HiOutlineFingerPrint className="text-5xl" />
+                     </div>
+                  </Link>
+               </div>
             </div>
-         </div>
-
-         <div className="-mt-4 md:mt-4 text-center md:text-left">
-            <p className="text-4xl md:text-6xl font-extralight text-gray-800 dark:text-gray-200 tracking-tighter">
-               {user.name}
-            </p>
-            <p className="text-4xl md:text-6xl font-extralight text-gray-800 dark:text-gray-200 tracking-tighter">
-               {user.family}
-            </p>
-            <p className="text-base font-light text-gray-500 mt-2">{user.job}</p>
-            <p className="text-base font-light text-gray-500 -mt-1">{user.level}</p>
          </div>
       </div>
    );
