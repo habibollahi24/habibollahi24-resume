@@ -14,7 +14,7 @@ import reactShopy from "../assets/images/react-shopy.jpg";
 import landingPageImage from "../assets/images/landingpage.jpg";
 import formikFormImage from "../assets/images/formik.jpg";
 import pizzaRaminImage from "../assets/images/pizzaRamin.jpg";
-import todoMongo from "../assets/images/todo-Mongo.jpg";
+import todoMongo from "../assets/images/todo-mongo.jpg";
 
 const trains = [
   {
